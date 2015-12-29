@@ -1,0 +1,126 @@
+,director,film,winner,year
+0,Kevin Costner,Dances with Wolves,True,1990
+1,Barry Levinson,Avalon,False,1990
+2,Giuseppe Tornatore,Cinema Paradiso,False,1990
+3,Francis Ford Coppola,The Godfather Part III,False,1990
+4,Martin Scorsese,Goodfellas,False,1990
+5,Jonathan Demme,The Silence of the Lambs,True,1991
+6,Barry Levinson,Bugsy,False,1991
+7,Oliver Stone,JFK,False,1991
+8,Barbra Streisand,The Prince of Tides,False,1991
+9,Ridley Scott,Thelma and Louise,False,1991
+10,Clint Eastwood,Unforgiven,True,1992
+11,Neil Jordan,The Crying Game,False,1992
+12,Rob Reiner,A Few Good Men,False,1992
+13,James Ivory,Howards End,False,1992
+14,Robert Altman,The Player,False,1992
+15,Steven Spielberg,Schindler's List,True,1993
+16,Martin Scorsese,The Age of Innocence,False,1993
+17,Andrew Davis,The Fugitive,False,1993
+18,Jane Campion,The Piano,False,1993
+19,James Ivory,The Remains of the Day,False,1993
+20,Robert Zemeckis,Forrest Gump,True,1994
+21,Mike Newell,Four Weddings and a Funeral,False,1994
+22,Quentin Tarantino,Pulp Fiction,False,1994
+23,Robert Redford,Quiz Show,False,1994
+24,Frank Darabont,The Shawshank Redemption,False,1994
+25,Ron Howard,Apollo 13,True,1995
+26,Mel Gibson,Braveheart,False,1995
+27,Michael Radford,Il Postino: The Postman,False,1995
+28,Mike Figgis,Leaving Las Vegas,False,1995
+29,Ang Lee,Sense and Sensibility,False,1995
+30,Anthony Minghella,The English Patient,True,1996
+31,Joel Coen,Fargo,False,1996
+32,Cameron Crowe,Jerry Maguire,False,1996
+33,Mike Leigh,Secrets and Lies,False,1996
+34,Scott Hicks,Shine,False,1996
+35,James Cameron,Titanic,True,1997
+36,Steven Spielberg,Amistad,False,1997
+37,James Brooks,As Good as It Gets,False,1997
+38,Gus Van Sant,Good Will Hunting,False,1997
+39,Curtis Hanson,L.A. Confidential,False,1997
+40,Steven Spielberg,Saving Private Ryan,True,1998
+41,Roberto Benigni,Life Is Beautiful,False,1998
+42,John Madden,Shakespeare in Love,False,1998
+43,Terrence Malick,The Thin Red Line,False,1998
+44,Peter Weir,The Truman Show,False,1998
+45,Sam Mendes,American Beauty,True,1999
+46,Spike Jonze,Being John Malkovich,False,1999
+47,Frank Darabont,The Green Mile,False,1999
+48,Michael Mann,The Insider,False,1999
+49,M. Night Shyamalan,The Sixth Sense,False,1999
+50,Ang Lee,"Crouching Tiger, Hidden Dragon",True,2000
+51,Cameron Crowe,Almost Famous,False,2000
+52,Steven Soderbergh,Erin Brockovich,False,2000
+53,Ridley Scott,Gladiator,False,2000
+54,Steven Soderbergh,Traffic,False,2000
+55,Ron Howard,A Beautiful Mind,True,2001
+56,Ridley Scott,Black Hawk Down,False,2001
+57,Peter Jackson,The Lord of the Rings: The Fellowship of the Ring,False,2001
+58,Christopher Nolan,Memento,False,2001
+59,Baz Luhrmann,Moulin Rouge!,False,2001
+60,Rob Marshall,Chicago,True,2002
+61,Martin Scorsese,Gangs of New York,False,2002
+62,Stephen Daldry,The Hours,False,2002
+63,Peter Jackson,The Lord of the Rings: The Two Towers,False,2002
+64,Roman Polanski,The Pianist,False,2002
+65,Peter Jackson,The Lord of the Rings: The Return of the King,True,2003
+66,Sofia Coppola,Lost in Translation,False,2003
+67,Peter Weir,Master and Commander: The Far Side of the World,False,2003
+68,Clint Eastwood,Mystic River,False,2003
+69,Gary Ross,Seabiscuit,False,2003
+70,Clint Eastwood,Million Dollar Baby,True,2004
+71,Martin Scorsese,The Aviator,False,2004
+72,Marc Forster,Finding Neverland,False,2004
+73,Taylor Hackford,Ray,False,2004
+74,Alexander Payne,Sideways,False,2004
+75,Ang Lee,Brokeback Mountain,True,2005
+76,Bennett Miller,Capote,False,2005
+77,Paul Haggis,Crash,False,2005
+78,George Clooney,"Good Night, and Good Luck",False,2005
+79,Steven Spielberg,Munich,False,2005
+80,Martin Scorsese,The Departed,True,2006
+81,Alejandro González Iñárritu,Babel,False,2006
+82,Bill Condon,Dreamgirls,False,2006
+83,Jonathan Dayton and Valerie Faris,Little Miss Sunshine,False,2006
+84,Stephen Frears,The Queen,False,2006
+85,Joel and Ethan Coen,No Country for Old Men,True,2007
+86,Julian Schnabel,The Diving Bell and the Butterfly,False,2007
+87,Sean Penn,Into the Wild,False,2007
+88,Tony Gilroy,Michael Clayton,False,2007
+89,Paul Thomas Anderson,There Will Be Blood,False,2007
+90,Danny Boyle,Slumdog Millionaire,True,2008
+91,David Fincher,The Curious Case of Benjamin Button,False,2008
+92,Christopher Nolan,The Dark Knight,False,2008
+93,Ron Howard,Frost/Nixon,False,2008
+94,Gus Van Sant,Milk,False,2008
+95,Kathryn Bigelow,The Hurt Locker,True,2009
+96,James Cameron,Avatar,False,2009
+97,Quentin Tarantino,Inglourious Basterds,False,2009
+98,Lee Daniels,Precious,False,2009
+99,Jason Reitman,Up in the Air,False,2009
+100,Tom Hooper,The King's Speech,True,2010
+101,Darren Aronofsky,Black Swan,False,2010
+102,David O. Russell,The Fighter,False,2010
+103,Christopher Nolan,Inception,False,2010
+104,David Fincher,The Social Network,False,2010
+105,Michel Hazanavicius,The Artist,True,2011
+106,Alexander Payne,The Descendants,False,2011
+107,David Fincher,The Girl with the Dragon Tattoo,False,2011
+108,Martin Scorsese,Hugo,False,2011
+109,Woody Allen,Midnight in Paris,False,2011
+110,Ben Affleck,Argo,True,2012
+111,Tom Hooper,Les Misérables,False,2012
+112,Ang Lee,Life of Pi,False,2012
+113,Steven Spielberg,Lincoln,False,2012
+114,Kathryn Bigelow,Zero Dark Thirty,False,2012
+115,Alfonso Cuarón,Gravity,True,2013
+116,Steve McQueen,12 Years a Slave,False,2013
+117,David O. Russell,American Hustle,False,2013
+118,Paul Greengrass,Captain Phillips,False,2013
+119,Martin Scorsese,The Wolf of Wall Street,False,2013
+120,Alejandro G. Iñárritu,Birdman or (The Unexpected Virtue of Ignorance),True,2014
+121,Clint Eastwood,American Sniper,False,2014
+122,Richard Linklater,Boyhood,False,2014
+123,Wes Anderson,The Grand Budapest Hotel,False,2014
+124,Morten Tyldum,The Imitation Game,False,2014
