@@ -4,30 +4,36 @@ from __future__ import unicode_literals
 from . import helpers
 import pandas as pd
 
-
-BASE_URL = 'https://en.wikipedia.org/wiki/Directors_Guild_of_America_Award_for_Outstanding_Directing_%E2%80%93_Feature_Film'
+AWARDS_URLS = {
+    'dga': 'https://en.wikipedia.org/wiki/Directors_Guild_of_America_Award_for_Outstanding_Directing_%E2%80%93_Feature_Film',
+    'pga_theatrical': 'https://en.wikipedia.org/wiki/Producers_Guild_of_America_Award_for_Best_Theatrical_Motion_Picture',
+    'sag_ensemble': 'https://en.wikipedia.org/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Cast_in_a_Motion_Picture'
+}
 WINNER_BACKGROUND = 'background:#B0C4DE;'
 EXTRA_CHARS = [u'\u2020', u'\u2021']
-CSV_BASE_FILENAME = 'dga_noms.csv'
+CSV_BASE_FILENAME = 'wiki_noms.csv'
 
 
-def export_nominee_info_to_csv():
-    all_nominee_info = get_nominee_info_from_tables()
-    df = pd.DataFrame(all_nominee_info)
+def export_all_nominee_info_to_csv():
+    all_info = []
+    for awards in AWARDS_URLS:
+        awards_nominee_info = get_nominee_info_from_tables(awards)
+        all_info.extend(awards_nominee_info)
+    df = pd.DataFrame(all_info)
     df.to_csv(CSV_BASE_FILENAME, encoding='utf-8')
-    print 'DGA nominee info exported!'
 
 
-def get_nominee_info_from_tables():
-    table_elements = _get_nominee_tables()
-    compiled_tables = map(_compile_table, table_elements)
+def get_nominee_info_from_tables(awards):
+    awards_url = AWARDS_URLS[awards]
+    table_elements = _get_nominee_tables(awards_url)
+    compiled_tables = map(lambda t: _compile_table(t, awards), table_elements)
     all_nominee_info = []
     for c_t in compiled_tables:
         all_nominee_info.extend(c_t)
     return all_nominee_info
 
 
-def _compile_table(table_el):
+def _compile_table(table_el, awards):
     data = []
     rows = table_el.find_all('tr')
     year = None
@@ -45,10 +51,12 @@ def _compile_table(table_el):
             else:
                 info_columns = row.find_all('td')
             row_info = {
+                'awards': awards,
+                'url': AWARDS_URLS[awards],
                 'year': year,
-                'film': info_columns[0].text.strip(),
-                'director': _format_director_name(info_columns),
-                'winner': _is_winner(info_columns)
+                'film': _format_name(info_columns[0]),
+                'winner(s)': _format_name(info_columns[1]),
+                'is_winner': _is_winner(info_columns)
             }
             data.append(row_info)
     return data
@@ -66,11 +74,11 @@ def _get_year_from_first_row(row):
     return row.find_all('td')[0].text.strip()
 
 
-def _format_director_name(info_columns):
-    director_text = info_columns[1].text
+def _format_name(column):
+    column_text = column.text
     for char in EXTRA_CHARS:
-        director_text = director_text.replace(char, '')
-    return director_text.strip()
+        column_text = column_text.replace(char, '')
+    return column_text.strip()
 
 
 def _is_winner(info_columns):
@@ -80,7 +88,7 @@ def _is_winner(info_columns):
     return first_col_style == WINNER_BACKGROUND
 
 
-def _get_nominee_tables():
-    page_bs = helpers.get_page_beautiful_soup(BASE_URL)
+def _get_nominee_tables(url):
+    page_bs = helpers.get_page_beautiful_soup(url)
     nominee_tables = page_bs.find_all("table", {"class": "wikitable"})
     return nominee_tables
